@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HobbyMedia ™</title>
+        <link rel="stylesheet" href="stylesheet/default.css">
+        <script src="script.js"></script>
+    </head> 
+    <body>
+        <nav>
+            <img src = "images/HobbyMedia.jpeg">
+            <h1>HobbyMedia ™</h1>
+            <div class="nav-buttons">
+                <button id="einloggen" onclick="showAlert2()">Login</button>
+                <button id="einloggen" onclick="showAlert()">Sign up</button>
+            </div>
+        </nav>
+        <nav id="sidebar">
+            
+                <img src="images/HobbyMedia.jpeg" alt="Button 1">
+        </nav>  
+        <div id="zentrierterBlock">
+              <h2>Neuste Beiträge von den Profilen</h2>
+              <div class="profil-block">
+                 <h3>Maya</h3>
+                 <p>heute gehe ich zum Kickboxen an der Domschule, wer hat Lust mitzukommen?</p>
+                 <button class="standort-button" onclick="openPopup()">Standort</button>
+                 <p>gepostet 26.01.24 16:43</p>
+              </div>
+            
+        </div>
+        <div id="standortPopup" class="popup">
+            <div class="popup-content">
+                <span id="close-btn" onclick="closePopup()">&times;</span>
+                <img id="domschule" src="images/domschule.png" alt="Standort-Bild">
+            </div>
+        </div>
+    </body>
+    <footer>
+        &copy; 2024 HobbyMedia ™ | Kontakt: info@hobbymedia.com
+    </footer>
+</html>

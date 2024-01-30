@@ -1,0 +1,219 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #455157;
+    padding: 10px;
+    margin: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-buttons button {
+    background-color: #967070;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-buttons button:not(:first-child) {
+    margin-left: 10px;
+}
+
+.nav-buttons button:hover {
+    background-color: #45a049;
+}
+
+
+#sidebar {
+    background-color: #455157;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px; 
+    position: fixed;
+    left: 10px;
+    top: 110px; 
+    bottom: 100px; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#sidebar img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.main-content {
+    margin-left: 80px; 
+    margin-top: 50px; 
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#zentrierterBlock {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto; 
+    max-width: 800px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profil-block {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.standort-button {
+    background-color: #967070;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.standort-button:hover {
+    background-color: #45a049;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#close-btn {
+    color: #0f0f0f;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #zentrierterBlock {
+        margin: 20px auto;
+        max-width: 100%; /* Vollständige Breite für kleinere Bildschirme */
+    }
+
+    .profil-block {
+        margin-bottom: 10px;
+    }
+
+    .standort-button {
+        padding: 8px 12px; /* Kleinere Padding für kleinere Bildschirme */
+    }
+
+    /* Weitere Anpassungen für kleinere Bildschirme hier */
+}
+
+/* Stile für Bildschirmbreiten ab 601px bis 1024px (z. B. für Tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #zentrierterBlock {
+        max-width: 90%; /* Weniger Breite für größere Bildschirme */
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    #sidebar {
+        visibility: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    #sidebar {
+        visibility: hidden;
+    }
+    
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #domschule {
+        width: 700px;
+        height: 350px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #domschule {
+        width: 400px;
+        height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    #einloggen {
+        visibility: hidden;
+        z-index: -10000;
+    }
+}
